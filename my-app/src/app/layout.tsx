@@ -1,3 +1,5 @@
+import "./index.css"; // Import global CSS
+
 export default function RootLayout({
     children,
   }: {
