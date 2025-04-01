@@ -1,8 +1,11 @@
 import mysql from "mysql2/promise";
 
+const dbUrl = process.env.DATABASE_URL;
+const pass = process.env.SECRET_KEY;
+
 export const db = mysql.createPool({
-  host: "mysql-techm.alwaysdata.net",
+  host: dbUrl,
   user: "techm",
-  password: "pkAA@1943tech",
+  password: pass,
   database: "techm_2025",
 });
